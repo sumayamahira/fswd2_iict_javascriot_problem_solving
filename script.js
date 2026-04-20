@@ -32,35 +32,21 @@
 
 function vowelCounter() {
 
-    userInput = prompt("Enter a string e.g. Apple: ").toLowerCase()
-    wordInputCounter = []
-
-    const vowels = ["a", "e", "i", "o", "u"]
-    let counter = 0
+    let userInput = prompt("Enter a string e.g. Apple: ").toLowerCase();
+    const vowels = ["a", "e", "i", "o", "u"];
+    let counter = 0;
 
     for (let w of userInput) {
-        if (w === vowels[0]) {
-            wordInputCounter.push(w);
-        }
-        else if (w === vowels[1]) {
-            wordInputCounter.push(w);
-        }
-        else if (w === vowels[2]) {
-            wordInputCounter.push(w);
-        }
-        else if (w === vowels[3]) {
-            wordInputCounter.push(w);
-        }
-        else if (w === vowels[4]) {
-            wordInputCounter.push(w);
+        if (vowels.includes(w)) {
+            counter++;
         }
     }
+
     console.log(`Your given text is: ${userInput}.`)
-    console.log(`There is ${wordInputCounter.length} vowels in your given text.`);
+    console.log(`There is ${counter} vowels in your given text.`);
 }
-
-
 vowelCounter();
+
 
 
 
