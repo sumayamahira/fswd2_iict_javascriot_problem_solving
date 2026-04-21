@@ -30,22 +30,58 @@
 
 // task-3-Write a function to count the number of vowels in a string.
 
-function vowelCounter() {
+// function vowelCounter() {
 
-    let userInput = prompt("Enter a string e.g. Apple: ").toLowerCase();
-    const vowels = ["a", "e", "i", "o", "u"];
-    let counter = 0;
+//     let userInput = prompt("Enter a string e.g. Apple: ").toLowerCase();
+//     const vowels = ["a", "e", "i", "o", "u"];
+//     let counter = 0;
 
-    for (let w of userInput) {
-        if (vowels.includes(w)) {
-            counter++;
-        }
+//     for (let w of userInput) {
+//         if (vowels.includes(w)) {
+//             counter++;
+//         }
+//     }
+
+//     console.log(`Your given text is: ${userInput}.`)
+//     console.log(`There is ${counter} vowels in your given text.`);
+// }
+// vowelCounter();
+
+
+// task-4-Write a function to find the longest word in a given string.
+
+let userInput = prompt("Enter a string e.g. a full sentence: ").toLowerCase();
+let wordList = [];
+let word = ""
+
+for (let l of userInput) {
+
+    if (l !== " ") {
+        word += l;
     }
-
-    console.log(`Your given text is: ${userInput}.`)
-    console.log(`There is ${counter} vowels in your given text.`);
+    else {
+        wordList.push(word);
+        word = ""
+    }
 }
-vowelCounter();
+
+wordList.push(word);
+
+let largestLength = 0;
+let largestWord = "";
+
+for (let w of wordList) {
+    if (w.length > largestLength) {
+        largestLength = w.length;
+        largestWord = w;
+    }
+}
+console.log(word);
+
+console.log(wordList)
+console.log(largestLength)
+console.log(largestWord)
+
 
 
 
