@@ -50,40 +50,19 @@
 
 // task-4-Write a function to find the longest word in a given string.
 
-function largestWordCounter() {
+function largestWordFinder() {
+    const input = prompt("Enter a sentence: ").toLowerCase().trim();
+    const words = input.split(" ");
 
-    let userInput = prompt("Enter a string e.g. a full sentence: ").toLowerCase();
-    let wordList = [];
-    let word = ""
+    let longest = "";
 
-    for (let l of userInput) {
-
-        if (l !== " ") {
-            word += l;
-        }
-        else {
-            wordList.push(word);
-            word = ""
+    for (const word of words) {
+        if (word.length > longest.length) {
+            longest = word;
         }
     }
 
-    wordList.push(word);
-
-    let largestLength = 0;
-    let largestWord = "";
-
-    for (let w of wordList) {
-        if (w.length > largestLength) {
-            largestLength = w.length;
-            largestWord = w;
-        }
-    }
-    console.log(word);
-
-    console.log(wordList)
-    console.log(largestLength)
-    console.log(largestWord)
-
+    console.log(`The longest word in your given sentence is: ${longest}`);
 }
 
-largestWordCounter();
+largestWordFinder();
