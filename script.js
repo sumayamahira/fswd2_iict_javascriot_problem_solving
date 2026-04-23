@@ -50,19 +50,26 @@
 
 // task-4-Write a function to find the longest word in a given string.
 
-function largestWordFinder() {
-    const input = prompt("Enter a sentence: ").toLowerCase().trim();
-    const words = input.split(" ");
+// function largestWordFinder() {
+//     const input = prompt("Enter a sentence: ").toLowerCase().trim();
+//     const words = input.split(" ");
 
-    let longest = "";
+//     let longest = "";
 
-    for (const word of words) {
-        if (word.length > longest.length) {
-            longest = word;
-        }
-    }
+//     for (const word of words) {
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
 
-    console.log(`The longest word in your given sentence is: ${longest}`);
-}
+//     console.log(`The longest word in your given sentence is: ${longest}`);
+// }
 
-largestWordFinder();
+// largestWordFinder();
+
+
+// task-5-Generate a random number between 10 to 20.
+
+const num = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+randomNumber = num[Math.floor(Math.random() * num.length)];
+console.log(randomNumber);
