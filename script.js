@@ -77,14 +77,29 @@
 
 // task-6-Find the lowest number in the array below.
 
-const num = [167, 190, 120, 165, 137]
+// const num = [167, 190, 120, 165, 137]
 
-let lowestNumber = num[0];
-for (i of num) {
-    if (i < lowestNumber) {
-        lowestNumber = i
+// let lowestNumber = num[0];
+// for (i of num) {
+//     if (i < lowestNumber) {
+//         lowestNumber = i
+//     }
+
+// }
+
+// console.log(lowestNumber);
+
+
+// task-7-Find the friend with the smallest name.
+
+const name = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+
+let smallName = name[0];
+
+for (const n of name) {
+    if (n.length < smallName.length) {
+        smallName = n;
     }
-
 }
 
-console.log(lowestNumber);
+console.log(`The smallest name among friends is: ${smallName}`);
