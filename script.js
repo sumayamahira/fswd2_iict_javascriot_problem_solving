@@ -138,19 +138,18 @@ const phones = [
 ]
 
 function findAveragePhonePrice(phones) {
-    let total = 0
+    let total = 0;
+
     for (let item of phones) {
-        total = total + item.price;
+        total += item.price;
     }
 
-    return total;
+    let average = total / phones.length;
 
+    return average;
 }
 
-let totalPrice= findAveragePhonePrice(phones);
-
-let averagePrice = totalPrice / phones.length;
-
-console.log(parseInt(averagePrice));
+let averagePrice = findAveragePhonePrice(phones);
+console.log(Math.round(averagePrice));
 
 
