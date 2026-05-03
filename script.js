@@ -150,6 +150,6 @@ function findAveragePhonePrice(phones) {
 }
 
 let averagePrice = findAveragePhonePrice(phones);
-console.log(Math.round(averagePrice));
+console.log(`The average price of the phones is: ${Math.round(averagePrice)}`);
 
 
