@@ -77,32 +77,49 @@
 
 // task-6-Find the lowest number in the array below.
 
-const num = [167, 190, 120, 165, 137]
+// const num = [167, 190, 120, 165, 137]
 
-let lowestNumber = num[0];
-for (i of num) {
-    if (i < lowestNumber) {
-        lowestNumber = i
-    }
+// let lowestNumber = num[0];
+// for (i of num) {
+//     if (i < lowestNumber) {
+//         lowestNumber = i
+//     }
 
-}
+// }
 
-console.log(`The lowest number in the array is: ${lowestNumber}`);
+// console.log(`The lowest number in the array is: ${lowestNumber}`);
 
 
 // task-7-Find the friend with the smallest name.
 
-const name = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+// const name = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
 
-let smallName = name[0];
+// let smallName = name[0];
 
-for (const n of name) {
-    if (n.length < smallName.length) {
-        smallName = n;
-    }
+// for (const n of name) {
+//     if (n.length < smallName.length) {
+//         smallName = n;
+//     }
+// }
+
+// console.log(`The smallest name among friends is: ${smallName}`);
+
+
+// task-8-Your task is to calculate the total budget required to buy electronics: laptop = 35000 tk, tablet = 15000 tk, mobile = 20000 tk.
+// Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets,
+// and mobile and returns the total money required.
+
+const priceOfLaptop = 30000;
+const priceOfTablet = 15000;
+const priceOfMobile = 20000;
+
+function calculateElectronicsBudget(laptop, tablet, mobile){
+
+    total = (laptop*priceOfLaptop + tablet*priceOfTablet + mobile*priceOfMobile)
+    return (total);
 }
 
-console.log(`The smallest name among friends is: ${smallName}`);
+moneyRequired = calculateElectronicsBudget(3, 15, 2)
 
-
+console.log(`The total budget required to buy all the electronics is: ${moneyRequired}`)
 
