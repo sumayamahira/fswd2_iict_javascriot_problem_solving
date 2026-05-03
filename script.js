@@ -72,22 +72,22 @@
 
 // const num = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 // randomNumber = num[Math.floor(Math.random() * num.length)];
-// console.log(randomNumber);
+// console.log(`The random number is: ${randomNumber}`);
 
 
 // task-6-Find the lowest number in the array below.
 
-// const num = [167, 190, 120, 165, 137]
+const num = [167, 190, 120, 165, 137]
 
-// let lowestNumber = num[0];
-// for (i of num) {
-//     if (i < lowestNumber) {
-//         lowestNumber = i
-//     }
+let lowestNumber = num[0];
+for (i of num) {
+    if (i < lowestNumber) {
+        lowestNumber = i
+    }
 
-// }
+}
 
-// console.log(lowestNumber);
+console.log(`The lowest number in the array is: ${lowestNumber}`);
 
 
 // task-7-Find the friend with the smallest name.
@@ -103,3 +103,6 @@ for (const n of name) {
 }
 
 console.log(`The smallest name among friends is: ${smallName}`);
+
+
+
