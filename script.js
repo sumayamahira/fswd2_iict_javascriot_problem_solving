@@ -164,6 +164,13 @@ const employees = [
 { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
 { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
 { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
-];
+]
 
+let totalMoneyProvided = 0
+for (let employee of employees){
+    const totalSalary = employee.starting + (employee.experience * employee.increment);
+    totalMoneyProvided += totalSalary;
 
+}
+
+console.log(`Total money provided to all of the employees is: ${totalMoneyProvided}`)
